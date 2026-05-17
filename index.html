@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sulawesi Youth Festival</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -13,57 +13,68 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+font-family:'Inter',sans-serif;
 }
 
 body{
-background:#f5f6fa;
+background:#f4f5f7;
 color:#111827;
-padding-bottom:120px;
+padding-bottom:95px;
 }
 
 /* HEADER */
 
 .header{
-height:64px;
-background:#1f3dbf;
+height:56px;
+background:white;
+border-bottom:1px solid #e5e7eb;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:0 16px;
+padding:0 14px;
+position:sticky;
+top:0;
+z-index:999;
 }
 
 .logo{
-font-size:24px;
+font-size:18px;
 font-weight:800;
-color:white;
+color:#2563eb;
 }
 
 .header-right{
 display:flex;
-gap:10px;
+gap:8px;
 }
 
 .header-btn{
-width:42px;
-height:42px;
-border-radius:50%;
-background:rgba(255,255,255,.12);
+width:34px;
+height:34px;
+border-radius:10px;
+background:#f3f4f6;
 display:flex;
 align-items:center;
 justify-content:center;
-color:white;
-font-size:15px;
+font-size:13px;
 font-weight:700;
+color:#374151;
+}
+
+/* WRAP */
+
+.wrapper{
+max-width:480px;
+margin:auto;
+background:white;
+min-height:100vh;
 }
 
 /* BANNER */
 
 .banner{
 width:100%;
-max-width:520px;
-margin:auto;
-height:190px;
+height:180px;
 overflow:hidden;
 }
 
@@ -77,9 +88,7 @@ display:block;
 /* CONTENT */
 
 .container{
-padding:20px 18px;
-max-width:520px;
-margin:auto;
+padding:16px;
 }
 
 /* CATEGORY */
@@ -87,134 +96,120 @@ margin:auto;
 .event-category{
 display:inline-flex;
 align-items:center;
-gap:6px;
-background:#e8edff;
-padding:7px 14px;
-border-radius:10px;
-font-size:14px;
+gap:5px;
+background:#eef2ff;
+padding:5px 10px;
+border-radius:8px;
+font-size:12px;
 font-weight:600;
-color:#4263eb;
-margin-bottom:18px;
+color:#2563eb;
+margin-bottom:12px;
 }
 
 /* TITLE */
 
 .event-title{
-font-size:32px;
+font-size:24px;
 font-weight:800;
 line-height:1.3;
-margin-bottom:28px;
+margin-bottom:22px;
+}
+
+/* SECTION */
+
+.section-box{
+margin-bottom:24px;
+}
+
+.section-title{
+font-size:15px;
+font-weight:700;
+margin-bottom:14px;
+color:#111827;
 }
 
 /* DETAIL */
 
-.detail-title{
-font-size:22px;
-font-weight:700;
-margin-bottom:18px;
-}
-
 .detail-list{
 display:flex;
 flex-direction:column;
-gap:18px;
-margin-bottom:32px;
+gap:12px;
 }
 
 .detail-row{
 display:flex;
 align-items:flex-start;
-gap:12px;
-font-size:16px;
-font-weight:500;
+gap:10px;
+font-size:14px;
 line-height:1.6;
+color:#374151;
 }
 
 .detail-icon{
-width:38px;
-height:38px;
-border-radius:12px;
-background:#e8edff;
+width:28px;
+height:28px;
+border-radius:8px;
+background:#eef2ff;
 display:flex;
 align-items:center;
 justify-content:center;
-font-size:16px;
+font-size:13px;
 flex-shrink:0;
-}
-
-/* LABEL */
-
-.label-title{
-font-size:16px;
-font-weight:700;
-color:#7a8699;
-margin-bottom:14px;
 }
 
 /* ORGANIZER */
 
-.organizer-wrap{
-margin-bottom:32px;
-}
-
 .organizer-box{
 display:flex;
 align-items:center;
-gap:14px;
+gap:10px;
 }
 
 .organizer-logo{
-width:52px;
-height:52px;
+width:42px;
+height:42px;
 border-radius:50%;
 object-fit:cover;
 }
 
 .organizer-name{
-font-size:17px;
+font-size:14px;
 font-weight:600;
-color:#4263eb;
 }
 
 /* SOCIAL */
 
-.social-section{
-margin-bottom:34px;
-}
-
-.instagram-btn{
+.social-btn{
 display:inline-flex;
 align-items:center;
-gap:8px;
-padding:10px 18px;
+gap:7px;
+padding:8px 14px;
 border-radius:999px;
-background:#eef2ff;
+background:#f3f4f6;
 text-decoration:none;
-font-size:16px;
+font-size:13px;
 font-weight:600;
-color:#4263eb;
+color:#111827;
 }
 
 /* TABS */
 
 .tabs{
 display:flex;
-gap:24px;
-margin-bottom:26px;
+gap:18px;
 border-bottom:1px solid #e5e7eb;
-overflow:auto;
+margin-bottom:18px;
 }
 
 .tab-btn{
 background:none;
 border:none;
-padding-bottom:14px;
-font-size:16px;
+padding-bottom:12px;
+font-size:14px;
 font-weight:600;
 cursor:pointer;
-color:#7a8699;
+color:#6b7280;
 position:relative;
-white-space:nowrap;
 }
 
 .tab-btn.active{
@@ -227,12 +222,11 @@ position:absolute;
 left:0;
 bottom:-1px;
 width:100%;
-height:3px;
-background:#4263eb;
-border-radius:999px;
+height:2px;
+background:#2563eb;
 }
 
-/* CONTENT */
+/* TAB CONTENT */
 
 .tab-content{
 display:none;
@@ -242,88 +236,98 @@ display:none;
 display:block;
 }
 
-/* SECTION */
-
-.section-title{
-font-size:24px;
-font-weight:800;
-margin-bottom:18px;
-}
+/* TEXT */
 
 .desc-text{
-font-size:15px;
-line-height:1.9;
-margin-bottom:18px;
-color:#333;
+font-size:14px;
+line-height:1.8;
+margin-bottom:14px;
+color:#374151;
 }
 
 .terms-box{
 display:flex;
 flex-direction:column;
-gap:16px;
+gap:12px;
 }
 
 .terms-box p{
-font-size:15px;
-line-height:1.9;
-color:#333;
+font-size:14px;
+line-height:1.8;
+color:#374151;
 }
 
 /* FLOATING */
 
 .bottom-ticket{
 position:fixed;
-left:50%;
-transform:translateX(-50%);
-bottom:12px;
-width:92%;
-max-width:520px;
-background:#edf1f7;
-padding:18px;
-border-radius:24px;
-box-shadow:0 8px 24px rgba(0,0,0,.08);
-z-index:9999;
+left:0;
+right:0;
+bottom:0;
+background:white;
+border-top:1px solid #e5e7eb;
+padding:12px 14px;
+z-index:999;
 }
 
-.bottom-top{
+.bottom-inner{
+max-width:480px;
+margin:auto;
 display:flex;
-justify-content:space-between;
 align-items:center;
-margin-bottom:14px;
+justify-content:space-between;
+gap:14px;
 }
 
 .price-label{
-font-size:14px;
-color:#7a8699;
-margin-bottom:4px;
+font-size:11px;
+color:#6b7280;
+margin-bottom:2px;
 }
 
 .bottom-price{
-font-size:28px;
+font-size:20px;
 font-weight:800;
 }
 
 .bottom-btn{
+height:46px;
+padding:0 22px;
+border-radius:12px;
+background:#2563eb;
 display:flex;
 align-items:center;
 justify-content:center;
-height:54px;
-background:#4263eb;
-border-radius:16px;
 text-decoration:none;
 color:white;
-font-size:18px;
+font-size:14px;
 font-weight:700;
-transition:.3s;
+flex-shrink:0;
 }
 
-.bottom-btn:hover{
-opacity:.9;
+/* MOBILE */
+
+@media(max-width:480px){
+
+.banner{
+height:160px;
+}
+
+.event-title{
+font-size:22px;
+}
+
+.container{
+padding:14px;
+}
+
 }
 
 </style>
 </head>
 <body>
+
+<div class="wrapper">
 
 <!-- HEADER -->
 
@@ -358,9 +362,13 @@ Artatix
 Sulawesi Youth Festival
 </h1>
 
-<h2 class="detail-title">
+<!-- DETAIL -->
+
+<div class="section-box">
+
+<div class="section-title">
 Detail Acara
-</h2>
+</div>
 
 <div class="detail-list">
 
@@ -376,16 +384,18 @@ Detail Acara
 
 <div class="detail-row">
 <div class="detail-icon">📍</div>
-<div>Makassar, Kota Makassar, Sulawesi Selatan</div>
+<div>Makassar, Sulawesi Selatan</div>
+</div>
+
 </div>
 
 </div>
 
 <!-- ORGANIZER -->
 
-<div class="organizer-wrap">
+<div class="section-box">
 
-<div class="label-title">
+<div class="section-title">
 Penyelenggara
 </div>
 
@@ -403,13 +413,13 @@ Sulawesi Youth Festival
 
 <!-- SOCIAL -->
 
-<div class="social-section">
+<div class="section-box">
 
-<div class="label-title">
+<div class="section-title">
 Media Sosial
 </div>
 
-<a href="#" class="instagram-btn">
+<a href="#" class="social-btn">
 📷 Instagram
 </a>
 
@@ -424,7 +434,7 @@ Deskripsi
 </button>
 
 <button class="tab-btn" onclick="showTab(event,'syarat')">
-Syarat & Ketentuan
+S&K
 </button>
 
 </div>
@@ -433,20 +443,12 @@ Syarat & Ketentuan
 
 <div id="deskripsi" class="tab-content active">
 
-<h2 class="section-title">
-Deskripsi
-</h2>
-
 <p class="desc-text">
-Pada mei 2025, Sulawesi Youth Festival (Southfest) sukses mengguncang Parkir Lot TSM Makassar dengan menghadirkan Juicy Luicy, Hindia, dan .Feast.
+Pada mei 2025, Sulawesi Youth Festival sukses mengguncang Makassar dengan menghadirkan Juicy Luicy, Hindia, dan .Feast.
 </p>
 
 <p class="desc-text">
-Kini, kami hadir kembali untuk menjawab kerinduan audiens. Volume 2 ini dirancang untuk menaikkan standar pertunjukan musik di Indonesia Timur.
-</p>
-
-<p class="desc-text">
-Jika Volume 1 adalah tentang "Perkenalan", maka Volume 2 adalah tentang "Pembuktian".
+Kini Southfest kembali dengan experience yang lebih besar dan megah untuk Indonesia Timur.
 </p>
 
 </div>
@@ -455,21 +457,17 @@ Jika Volume 1 adalah tentang "Perkenalan", maka Volume 2 adalah tentang "Pembukt
 
 <div id="syarat" class="tab-content">
 
-<h2 class="section-title">
-Syarat & Ketentuan
-</h2>
-
 <div class="terms-box">
 
-<p>1. Tiket yang sudah dibeli tidak dapat dikembalikan kecuali ada pembatalan acara oleh penyelenggara.</p>
+<p>1. Tiket yang sudah dibeli tidak dapat dikembalikan.</p>
 
-<p>2. Apabila terjadi force majeure, pengunjung tidak berhak meminta refund selama acara tetap berlangsung.</p>
+<p>2. Pengunjung wajib menunjukkan tiket dan identitas.</p>
 
-<p>3. Pengunjung wajib menunjukkan tiket dan identitas saat masuk.</p>
+<p>3. Dilarang membawa narkotika dan barang berbahaya.</p>
 
-<p>4. Dilarang membawa barang berbahaya dan narkotika.</p>
+<p>4. Penyelenggara berhak mengubah jadwal acara.</p>
 
-<p>5. Penyelenggara berhak mengubah jadwal tanpa pemberitahuan.</p>
+</div>
 
 </div>
 
@@ -481,7 +479,7 @@ Syarat & Ketentuan
 
 <div class="bottom-ticket">
 
-<div class="bottom-top">
+<div class="bottom-inner">
 
 <div>
 
@@ -495,11 +493,11 @@ Rp133.000
 
 </div>
 
-</div>
-
-<a href="#" class="bottom-btn">
-🎟️ Beli Tiket
+<a href="https://eticketdigital.github.io/cek/" class="bottom-btn">
+Beli Tiket
 </a>
+
+</div>
 
 </div>
 
